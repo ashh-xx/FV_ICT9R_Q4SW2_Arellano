@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Seatwork 2</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body style="background-color: #fcf4dd; margin: 20px; text-align: center;">
+	<h1>Time Converter</h1>
+	<h3>Let's convert some time!</h3>
+	<div class="container" style="display: inline-flex; align-content: center;">
+		<table class="col-md-6 center">
+			<tr>
+				<th style="background-color: #e8dff5">
+					<br>
+					<h4>Seconds</h4>
+					<input type="text" id="seconds">
+					<br><br>
+					<input type="button" class="btn btn-primary" value="To Minutes" onclick="SecMin()">
+					<input type="button" class="btn btn-primary" value="To Hours" onclick="SecHr()">
+					<input type="button" class="btn btn-primary" value="To Days" onclick="SecDay()">
+					<br><br>
+				</th>
+			</tr>
+		</table>
+		<br><br>
+		<table class="col-md-6 center">
+			<tr>
+				<th style="background-color: #e8dff5">
+					<br>
+					<h4>Minutes</h4>
+					<input type="text" id="minutes">
+					<br><br>
+					<input type="button" class="btn btn-primary" value="To Seconds" onclick="MinSec()">
+					<input type="button" class="btn btn-primary" value="To Hours" onclick="MinHr()">
+					<input type="button" class="btn btn-primary" value="To Days" onclick="MinDay()">
+					<br><br>
+				</th>
+			</tr>
+		</table>
+	</div>
+	<br><br>
+	<div class="container" style="display: inline-flex; align-content: center;">
+		<table class="col-md-6 center">
+			<tr>
+				<th style="background-color: #e8dff5">
+					<br>
+					<h4>Hours</h4>
+					<input type="text" id="hours">
+					<br><br>
+					<input type="button" class="btn btn-primary" value="To Seconds" onclick="HrSec()">
+					<input type="button" class="btn btn-primary" value="To Minutes" onclick="HrMin()">
+					<input type="button" class="btn btn-primary" value="To Days" onclick="HrDay()">
+					<br><br>
+				</th>
+			</tr>
+		</table>
+		<br><br>
+		<table class="col-md-6 center">
+			<tr>
+				<th style="background-color: #e8dff5">
+					<br>
+					<h4>Days</h4>
+					<input type="text" id="days">
+					<br><br>
+					<input type="button" class="btn btn-primary" value="To Seconds" onclick="DaySec()">
+					<input type="button" class="btn btn-primary" value="To Minutes" onclick="DayMin()">
+					<input type="button" class="btn btn-primary" value="To Hours" onclick="DayHr()">
+					<br><br>
+				</th>
+			</tr>
+		</table>
+	</div>
+	<script type="text/javascript">
+		function SecMin(){
+			var x, y
+			x = (document.getElementById('seconds').value);
+			y = 60;
+			alert (x/y);
+		}
+		function SecHr(){
+			var x, y
+			x = (document.getElementById('seconds').value);
+			y = 3600;
+			alert (x/y);
+		}
+		function SecDay(){
+			var x, y
+			x = (document.getElementById('seconds').value);
+			y = 86400;
+			alert (x/y);
+		}
+		function MinSec(){
+			var x, y
+			x = (document.getElementById('minutes').value);
+			y = 60;
+			alert (x*y);
+		}
+		function MinHr(){
+			var x, y
+			x = (document.getElementById('minutes').value);
+			y = 60;
+			alert (x/y);
+		}
+		function MinDay(){
+			var x, y
+			x = (document.getElementById('minutes').value);
+			y = 1440;
+			alert (x/y);
+		}
+		function HrSec(){
+			var x, y
+			x = (document.getElementById('hours').value);
+			y = 3600;
+			alert (x*y);
+		}
+		function HrMin(){
+			var x, y
+			x = (document.getElementById('hours').value);
+			y = 60;
+			alert (x*y);
+		}
+		function HrDay(){
+			var x, y
+			x = (document.getElementById('hours').value);
+			y = 24;
+			alert (x/y);
+		}
+		function DaySec(){
+			var x, y
+			x = (document.getElementById('days').value);
+			y = 86400;
+			alert (x*y);
+		}
+		function DayMin(){
+			var x, y
+			x = (document.getElementById('days').value);
+			y = 1440;
+			alert (x*y);
+		}
+		function DayHr(){
+			var x, y
+			x = (document.getElementById('days').value);
+			y = 24;
+			alert (x*y);
+		}
+	</script>
+</body>
+</html>
